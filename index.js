@@ -1,4 +1,4 @@
-import { Client, Collection, GatewayIntentBits, REST, Routes, ActivityType, codeBlock } from 'discord.js';
+import { Client, Collection, GatewayIntentBits, REST, Routes, ActivityType } from 'discord.js';
 import config from './config.json' assert { type: 'json' };
 import fs from 'fs';
 const client = new Client({
