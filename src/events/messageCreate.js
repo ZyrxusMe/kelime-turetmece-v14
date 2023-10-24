@@ -22,7 +22,7 @@ export default async (client, db, message) => {
 
     if (message.content.length < 3) {
         message.react("❌");
-        return message.reply("Kelime 3 harften fazla olmalıdır.").then(del);
+        return message.reply("Kelime 2 harften fazla olmalıdır.").then(del);
     }
     
     if (find.words.includes(kelime)) {
@@ -45,7 +45,9 @@ export default async (client, db, message) => {
     await db.set(`ayarlar.${message.guild.id}.word`, kelime);
     
     if (kelime.endsWith("ğ")) {
-        const randomHarf = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+        let randomHarf;
+        do {randomHarf = String.fromCharCode(65 + Math.floor(Math.random() * 26));} while (randomHarf == 'X' || randomHarf == 'W' || randomHarf == "Q");
+    
         await db.set(`ayarlar.${message.guild.id}.word`, randomHarf);
         message.reply(`Kelime **Ğ** ile bittiği için yeni harf belirlendi. Türetilen kelime **${randomHarf}** ile başlamalı.`);
     }

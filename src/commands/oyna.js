@@ -19,7 +19,7 @@ const execute = async (client, db, interaction) => {
         return interaction.reply({content: "Kanala mesaj atılırken bir hata oluştu. Gereken yetkileri verdiğinizden emin olmalısınız."})
     })
     let word;
-    do {word = String.fromCharCode(65 + Math.floor(Math.random() * 26));} while (word == 'X' || word == 'W');
+    do {word = String.fromCharCode(65 + Math.floor(Math.random() * 26));} while (word == 'X' || word == 'W' || word == "Q");
         db.set(`ayarlar.${interaction.guild.id}`, {
         channel: channel.id,
         word,
