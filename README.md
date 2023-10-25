@@ -16,4 +16,4 @@ Eğer katkıda bulunmak isterseniz pull request atabilirsiniz.
 
 ## 🎭 Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE.md](LICENSE.md) dosyasını okuyun.
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını okuyun.
