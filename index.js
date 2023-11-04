@@ -1,5 +1,5 @@
 import { Client, Collection, GatewayIntentBits, REST, Routes, ActivityType } from 'discord.js';
-import config from './config.json' assert { type: 'json' };
+import config from './config.js';
 import fs from 'fs';
 const client = new Client({
     intents: [
@@ -25,7 +25,7 @@ for (const file of commandFiles) {
 }
 
 client.on("ready", async () => {
-    client.user.setActivity({ state: config.activity || "Hello World!", name: "Custom Status", type: ActivityType.Custom });
+    client.user.setActivity({ state: config.activity || "Abone ol", name: "Custom Status", type: ActivityType.Custom });
 
     const rest = new REST({ version: '10' }).setToken(config.token);
 
@@ -36,8 +36,7 @@ client.on("ready", async () => {
     } catch (e) {
         console.error(e);
     }
-
-    console.log(`${client.user.tag} olarak bağlanıldı.`);
+    console.log(`${client.user.tag} olarak bağlanıldı.`);    
 });
 
 

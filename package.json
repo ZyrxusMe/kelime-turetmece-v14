@@ -8,6 +8,7 @@
     "better-sqlite3": "^9.0.0",
     "discord.js": "^14.13.0",
     "node-fetch": "^3.3.2",
+    "os": "^0.1.2",
     "quick.db": "^9.1.7"
   },
   "name": "kelime-turetmece-v14",
