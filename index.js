@@ -41,7 +41,7 @@ client.on("ready", async () => {
 
 
 const files = await fs.promises.readdir('./src/events');
-checkTokenSafety(config)
+//checkTokenSafety(config)
 for (const file of files) {
     if (file.endsWith('.js')) {
         const event = await import(`./src/events/${file}`);
