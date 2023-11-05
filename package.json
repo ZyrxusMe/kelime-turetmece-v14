@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/ZyrxusMe/kelime-turetmece-v14/issues"
   },
-  "homepage": "https://github.com/ZyrxusMe/kelime-turetmece-v14#readme"
+  "homepage": "https://github.com/ZyrxusMe/kelime-turetmece-v14#readme",
+  "engines": {
+    "node": "16.x"
+  }
 }
