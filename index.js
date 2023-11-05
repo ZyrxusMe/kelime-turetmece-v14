@@ -26,7 +26,7 @@ for (const file of commandFiles) {
 client.on("ready", async () => {
     client.user.setActivity({ state: config.activity || "Abone ol", name: "Custom Status", type: ActivityType.Custom });
 
-    const rest = new REST({ version: '10' }).setToken(config.token);
+    const rest = new REST({ version: '10' }).setToken(client.token);
 
     try {        
         const commands = client.commands
