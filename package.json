@@ -5,11 +5,9 @@
   },
   "dependencies": {
     "ayran": "^0.0.1",
-    "better-sqlite3": "^9.0.0",
+    "croxydb": "^0.0.22",
     "discord.js": "^14.13.0",
-    "node-fetch": "^3.3.2",
-    "os": "^0.1.2",
-    "quick.db": "^9.1.7"
+    "node-fetch": "^3.3.2"
   },
   "name": "kelime-turetmece-v14",
   "version": "1.0.0",

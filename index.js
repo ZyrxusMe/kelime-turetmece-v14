@@ -11,8 +11,7 @@ const client = new Client({
 });
 import { checkTokenSafety } from 'ayran';
 client.commands = new Collection();
-import { QuickDB } from 'quick.db';
-const db = new QuickDB();
+import db from 'croxydb'
 const commandFiles = fs.readdirSync('./src/commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
